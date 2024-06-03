@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.mainHeader {
+  background: #232323;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.projectLogo{
+    color: #ffffff;
+}
+
+#menuBtn{
+    display: none;
+}
+
+
+.mainMenu{
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+
+.mainMenu li{
+    margin: 0rem 1rem;
+}
+
+.mainMenu li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menuResp{
+    display: none;
+}
+
+/*te amo piupiu */
+
+
+@media screen and ( max-width: 600px ) {
+    .mainHeader{
+        height: 6rem;
+        padding: 0rem 2rem;
+        position: fixed;
+        width: 100%;
+    }
+
+    .projectLogo{
+
+        font-size: 2rem;
+        
+    }
+
+    .mainMenu{
+        flex-flow: column;
+        position: absolute;
+        align-items: center;
+        top: 6rem;
+        left: 0rem;
+        background: #4362eee6;
+        width: 100%;
+        padding: 1rem 0rem;
+        display: none;
+    }
+
+
+    .mainMenu li{
+        margin: 1rem 0rem;
+    }
+
+    .mainMenu li a{
+        font-size: 1.4rem;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    #menuBtn{
+        height: 2.2rem;
+        display: block;
+    }
+
+    .displayYes{
+        display: flex;
+    }
+
+}
